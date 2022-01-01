@@ -19,14 +19,12 @@ import 'shared/network/remote/dio_helper.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   BlocOverrides.runZoned(
-    () {
-      // Use cubits...
-    },
+    () {},
     blocObserver: MyBlocObserver(),
   );
   DioHelper.init();
   await CacheHelper.init();
-  bool onBoarding = CacheHelper.getData(key: 'onBoarding');
+  bool? onBoarding = CacheHelper.getData(key: 'onBoarding');
   token = CacheHelper.getData(key: 'token');
   print(token);
 
@@ -73,7 +71,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: lightTheme,
         themeMode: ThemeMode.light,
-        home: OnBoardingScreen(),
+        home: startWidget,
       ),
     );
   }
