@@ -29,7 +29,7 @@ class ShopCubit extends Cubit<ShopStates> {
     SettingesScreen()
   ];
 
-  void ChangeBottom(int index) {
+  void ChangeIndex(int index) {
     currenindex = index;
     emit(ShopChangeBottomNavStates());
   }

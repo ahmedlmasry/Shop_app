@@ -11,9 +11,15 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: EasySplashScreen(
-        logo: const Image(image: AssetImage('assets/images/shop_logo.jpg')),
+        logo: const Image(
+          image: AssetImage('assets/images/shop_logo.jpg'),
+        ),
+        logoSize: 100,
         showLoader: false,
-        title: const Text('Salla Store'),
+        title: const Text(
+          'Salla Store',
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        ),
         durationInSeconds: 3,
         navigator: OnBoardingScreen(),
       ),

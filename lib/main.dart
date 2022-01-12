@@ -9,6 +9,7 @@ import 'package:shop_app/modules/shop%20login/cubit/cubit.dart';
 import 'package:shop_app/modules/shop%20login/shop_login.dart';
 import 'package:shop_app/modules/shop%20register/cubit/cubit.dart';
 import 'package:shop_app/modules/shop%20register/shop_register.dart';
+import 'package:shop_app/modules/splash-screen.dart';
 import 'package:shop_app/shared/components/bloc_observer.dart';
 import 'package:shop_app/shared/components/constants.dart';
 import 'package:shop_app/shared/network/local/cache_helper.dart';
@@ -71,7 +72,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: lightTheme,
         themeMode: ThemeMode.light,
-        home: startWidget,
+        home: const SplashScreen(),
       ),
     );
   }

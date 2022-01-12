@@ -36,7 +36,7 @@ class ShopLayout extends StatelessWidget {
           bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             onTap: (int index) {
-              cubit.ChangeBottom(index);
+              cubit.ChangeIndex(index);
             },
             currentIndex: cubit.currenindex,
             items: const [
