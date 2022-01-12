@@ -45,7 +45,7 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   final Widget startWidget;
-  MyApp({required this.startWidget});
+  const MyApp({required this.startWidget});
 
   @override
   Widget build(BuildContext context) {
